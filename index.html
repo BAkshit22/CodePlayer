@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Code Player</title>
+     <script type="text/javascript" src="jquery.min.js"></script>
+     <script src="jqueryUi/jquery-ui.js"></script>
+     <link href="jqueryUi/jquery-ui.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			CodePlayer
+		</div>
+		<div id="buttonContainer">
+			<div class="toggleButton active" id="html">Html</div>
+			<div class="toggleButton" id="css">CSS</div>
+			<div class="toggleButton" id="javaScript">JavaScript</div>
+			<div class="toggleButton active" id="output">Output</div>
+		</div>
+	</div>
+
+	<div id="bodyContainer">
+		<textarea class="panel" id="htmlPanel"><p>Hello World!</p></textarea>
+		<textarea class="panel hidden" id="cssPanel">p{color : green;}</textarea>
+		<textarea class="panel hidden" id="javaScriptPanel">alert("welcome to code player");</textarea>
+		<iframe class="panel" id="outputPanel"></iframe>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
